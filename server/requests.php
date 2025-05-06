@@ -21,7 +21,7 @@ if (isset($_POST['signup'])) {      // Signup condition
 
         $_SESSION['user'] = ['username' => $username, 'email' => $email, 'user_id' => $userid];
 
-        header("location: /phpProjects/php-discuss-website");
+        header("location: /phpProjects/php-project-discuss");
 
     } else {
         echo "No new user is registered";
@@ -33,7 +33,6 @@ if (isset($_POST['signup'])) {      // Signup condition
     $password = $_POST["password"];
     $username = "";
     $userid = "";
-
 
     $query = "SELECT * FROM `users` WHERE `email` = '$email' and `password` = '$password'";
 
@@ -48,7 +47,7 @@ if (isset($_POST['signup'])) {      // Signup condition
 
         $_SESSION['user'] = ['username' => $username, 'email' => $email, 'user_id' => $userid];
 
-        header("location: /phpProjects/php-discuss-website");
+        header("location: /phpProjects/php-project-discuss");
 
     } else {
         echo "No such User found";
@@ -58,7 +57,7 @@ if (isset($_POST['signup'])) {      // Signup condition
   
     session_unset();
     
-    header("location: /phpProjects/php-discuss-website");
+    header("location: /phpProjects/php-project-discuss");
     
 } elseif (isset($_POST["ask"])) {                 // Ask a Que. condition
  
@@ -72,7 +71,7 @@ if (isset($_POST['signup'])) {      // Signup condition
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        header("location: /phpProjects/php-discuss-website");
+        header("location: /phpProjects/php-project-discuss");
     } else {
         echo "Question is not added to Database";
     }
@@ -88,7 +87,7 @@ if (isset($_POST['signup'])) {      // Signup condition
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        header("location: /phpProjects/php-discuss-website/?q-id=$question_id");
+        header("location: /phpProjects/php-project-discuss/?q-id=$question_id");
     } else {
         echo "Answer is not Submitted";
     }
@@ -102,7 +101,7 @@ if (isset($_POST['signup'])) {      // Signup condition
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        header("location: /phpProjects/php-discuss-website/");
+        header("location: /phpProjects/php-project-discuss/");
     }else{
         echo "Question is not deleted";
     }
