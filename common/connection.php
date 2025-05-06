@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root","","discuss_website");
+$conn = mysqli_connect("localhost","root","","php-discuss-website");
 
 if(!$conn) {
     echo "Error : Database is not connected";
