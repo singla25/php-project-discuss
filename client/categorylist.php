@@ -4,11 +4,9 @@
     <?php
 
     include("./common/connection.php");
-
     $query = "SELECT * FROM `category`";
-
     $result = mysqli_query($conn, $query);
-
+    
     foreach ($result as $row) {
         $name = ucfirst($row['name']);
         $id = $row['id'];

@@ -3,9 +3,7 @@
         <h5>Answers: </h5>
 
         <?php
-        
         $query = "SELECT * FROM `answers` WHERE `question_id` = $qid";
-
         $result = mysqli_query($conn, $query);
 
         foreach ($result as $row) {

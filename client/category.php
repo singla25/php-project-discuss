@@ -2,11 +2,9 @@
     <option value="">Select a Category</option>
     <?php 
         include("./common/connection.php");
-
         $query = "SELECT * FROM `category`";
-
         $result = mysqli_query($conn, $query);
-
+        
         // ucfirst() is a function to capatilized the first letter of word
         foreach($result as $row){
 
