@@ -1,56 +1,83 @@
-# Discuss – Q&A Platform in PHP
+# Discuss – Q\&A Platform in PHP
 
-A beginner-friendly platform where users can post questions, respond to others, and upvote replies—built using PHP and MySQL.
+A beginner-friendly platform where users can post questions and respond to others using PHP and MySQL.
 
 ---
 
 ## 🚀 Overview
-Discuss is a lightweight web application designed to simulate the core features of a Q&A forum like StackOverflow. The project demonstrates backend CRUD operations, user authentication, and dynamic content rendering using PHP and MySQL.
+
+Discuss is a lightweight web application designed to simulate the core features of a QnA forum like StackOverflow. The project demonstrates backend CRUD operations, user authentication, dynamic content rendering, and session management using PHP and MySQL.
 
 ---
 
 ## ✨ Features
-- User registration/login
-- Post questions and answers with full CRUD support
+
+* User registration and login system (session-based authentication)
+* Post questions and answers with full **CRUD (Create, Read, Update, Delete)** functionality
+* Role-based access control handled within a single users table
+* Session and cookies management for maintaining user states
 
 ---
 
 ## 🛠️ Tech Stack
-- **PHP** (server-side logic)
-- **MySQL** (database)
-- **Git** & **GitHub** for version control
+
+* **Frontend:** HTML5, CSS3
+* **Backend:** PHP (Core PHP)
+* **Database:** MySQL
+* **Version Control:** GitHub
+* **Development Environment:** XAMPP / LAMP / WAMP
 
 ---
 
-## 🧾 Installation & Usage
-1. Clone the repository:  
-   `git clone https://github.com/singla25/php-project-discuss.git`
-2. Set up a local web server (e.g. XAMPP/LAMP) and create a database `discuss_db`
-3. Import the provided `schema.sql` file into MySQL
-4. Configure database credentials in `config.php`
-5. Open your browser at `http://localhost/project-folder`
-6. Register an account and start asking or answering questions
+## 🧻 Installation & Usage
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/singla25/php-project-discuss.git
+   ```
+2. **Setup Localhost:**
+
+   * Use XAMPP, LAMP, or WAMP to run Apache and MySQL.
+3. **Database Configuration:**
+
+   * Create a database named `discuss_db` in **phpMyAdmin**.
+   * Import the `schema.sql` file provided.
+4. **Edit Database Credentials in config.php:**
+
+   ```php
+   $dbHost = 'localhost';
+   $dbUsername = 'root';
+   $dbPassword = '';
+   $dbName = 'discuss_db';
+   ```
+5. **Run the Application:**
+
+   * Visit `http://localhost/project-folder` in your web browser.
 
 ---
 
-## 🧪 Demo & Screenshots
-*Include screenshots of the UI (login page, question feed, answer page, etc.) here.*
+## 🔪 Demo & Screenshots
+
+*Include screenshots of UI: Login Page, Question Feed, Answer Page, etc.*
 
 ---
 
 ## ✅ Future Enhancements
-- Real-time commenting via WebSockets
-- Search/filter users and question tags
-- Email notifications upon replies or votes
-- Full-text search capability
 
----
-
-## 🧑‍💻 About the Author
-Created by **Sahil Singla**, a sophomore IT student passionate about full-stack PHP development. This project helped sharpen web-app fundamentals and backend logic skills.
+* Real-time commenting using WebSockets
+* Advanced search and tag filtering
+* Email notifications for replies and upvotes
+* Full-text search functionality for questions and answers
 
 ---
 
 ## 📄 License
-Distributed under the MIT License. Feel free to use, modify, or contribute!
 
+This project is developed for educational purposes only and is not intended for commercial use.
+
+---
+
+## 👨‍💻 About the Author
+
+Created by **Sahil Singla**, a passionate full-stack PHP developer. This project helped strengthen skills in backend logic, session handling, and building interactive web applications.
