@@ -10,19 +10,14 @@ Discuss is a lightweight web application designed to simulate the core features 
 ---
 
 ## ✨ Features
-- User registration/login with secure password hashing
+- User registration/login
 - Post questions and answers with full CRUD support
-- Voting system to upvote answers
-- Role‑based access: admin and regular user privileges
-- Responsive layout using Bootstrap and jQuery
-- Real‑time notifications (if implemented) for replies
 
 ---
 
 ## 🛠️ Tech Stack
 - **PHP** (server-side logic)
 - **MySQL** (database)
-- **Bootstrap**, **jQuery**, **AJAX** (frontend interactivity)
 - **Git** & **GitHub** for version control
 
 ---
